@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\projects\satellite\src\api.py", line 305, in analyze_images
+    inference_data = predict_change(str(before_path), str(after_path), str(RESULTS_DIR / job_id))
+  File "C:\projects\satellite\src\run_inference.py", line 129, in predict_change
+    raise ValueError(f"IMAGE CONTEXT MISMATCH: {context_reason} (Similarity: {round(context_score*100, 1)}%). Comparison between unrelated snapshots is prohibited.")
+ValueError: IMAGE CONTEXT MISMATCH: CATEGORY_MISMATCH: Images represent incompatible terrain types (e.g., Urban vs. Deep Ocean). (Similarity: 40.3%). Comparison between unrelated snapshots is prohibited.
